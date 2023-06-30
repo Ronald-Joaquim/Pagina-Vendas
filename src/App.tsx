@@ -20,7 +20,7 @@ export default function App() {
         <Grid container>
           <Grid md={12} display={'flex'} justifyContent={'center'}>
             <Typography mt={3}>
-              <img src={Logo} />
+              <img src={Logo} alt="video"/>
             </Typography>
           </Grid>
           <Grid md={12} display={'flex'} justifyContent={'center'}>
