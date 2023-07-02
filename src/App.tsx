@@ -84,7 +84,7 @@ export default function App() {
             <Button variant="contained" sx={{
               fontSize: "30px",
               fontWeight: 600,
-              background: "#363753",
+              background: "#292a35",
               borderRadius: "30px",
               padding: "15px",
               width: "600px",
@@ -277,7 +277,7 @@ export default function App() {
                   fontSize: "18px",
                   color: "#FEFEFE"
                 }}>
-                  • Técnicas de levantamento de peso eficazes: progressão, sobrecarga progressiva e periodização
+                  • Técnicas de levantamento de peso eficazes: progressão, sobrecarga progressiva e periodização <br />
                   • Importância da alimentação e nutrição para a construção muscular <br />
                   • Recuperação, descanso e sono: o papel crucial na construção muscular <br />
                   • Motivação e mindset para alcançar seus objetivos de construção muscular <br />
@@ -289,7 +289,7 @@ export default function App() {
             <Button variant="contained" sx={{
               fontSize: "30px",
               fontWeight: 600,
-              background: "#363753",
+              background: "#292a35",
               borderRadius: "30px",
               padding: "15px",
               width: "600px",
