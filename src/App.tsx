@@ -15,46 +15,87 @@ export default function App() {
         backgroundImage: "-webkit-linear-gradient(280deg, #363753 20%, rgba(255, 255, 255, 1) 70%)",
       }}>
         <Grid container>
-          <Grid md={12} display={'flex'} justifyContent={'center'} mt={5}>
-            <Typography variant="h4" sx={{ fontWeight: 900, color: "#FEFEFE" }}>
+          <Grid md={12} sm={12} xs={12} display={'flex'} justifyContent={'center'} mt={5} textAlign={"center"}>
+            <Typography sx={{ fontWeight: 900, color: "#FEFEFE" }} fontSize={{ md: "40px", sm: "20px", xs: "16px" }}>
               🦾 CONSTRUINDO MÚSCULOS
             </Typography>
           </Grid>
-          <Grid md={12} display={'flex'} justifyContent={'center'} mt={5}>
-            <Typography variant="h3" sx={{ fontWeight: 700, color: "#5CD2C6" }} mt={3}>
+          <Grid md={12} sm={12} xs={12} display={'flex'} justifyContent={'center'} textAlign={"center"}>
+            <Typography sx={{ fontWeight: 900, color: "#5CD2C6" }} mt={3} fontSize={{ md: "60px", sm: "40px", xs: "18px" }}>
               Aprenda como treinar de verdade
             </Typography>
           </Grid>
-          <Grid md={12} display={'flex'} justifyContent={'center'}>
-            <Typography variant="h5" sx={{ fontWeight: 700, color: "#DFE3EE" }} mt={2}>
-              Descubra o segredo para construir músculos incríveis com o
-              <Grid display={'flex'} justifyContent={'center'}>
-                <Typography variant="h5" sx={{ fontWeight: 700, color: "#DFE3EE" }}>
-                  nosso e-book definitivo sobre construção muscular!
-                </Typography>
-              </Grid>
+          <Grid md={12} sm={12} xs={12} display={'flex'} justifyContent={'center'} textAlign={"center"}>
+            <Typography fontSize={{ md: "35px", sm: "20px", xs: "18px" }} alignItems={"center"} sx={{ fontWeight: 700, color: "#DFE3EE" }} mt={2}>
+              Descubra o segredo para construir músculos incríveis com o <br />
+              nosso e-book definitivo sobre construção muscular!
             </Typography>
           </Grid>
-          <Grid md={12} display={'flex'} justifyContent={'center'} mt={6} >
-            <Box sx={{
-              padding: "4px 4px 1px",
-              borderRadius: "4px",
-              background: "#fff",
-              boxShadow: "0px 0px 26px 10px rgba(0,0,0,0.4)",
-            }}>
-              <iframe width="800" height="500" src="https://www.youtube.com/embed/5h29R5wrz9Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-            </Box>
+
+          <Grid container display={"flex"} justifyContent={'center'}>
+            <Grid container display={{ md: "flex", sm: "none", xs: "none" }} justifyContent={'center'}>
+              <Grid md={12} display={'flex'} justifyContent={'center'} mt={6} >
+                <Box sx={{
+                  padding: "4px 4px 1px",
+                  borderRadius: "4px",
+                  background: "#fff",
+                  boxShadow: "0px 0px 26px 10px rgba(0,0,0,0.4)",
+                  md: {
+                    display: "none"
+                  }
+                }}>
+                  <iframe width="800" height="500" src="https://www.youtube.com/embed/5h29R5wrz9Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
+                </Box>
+              </Grid>
+            </Grid>
+            <Grid container display={{ md: "none", sm: "flex", xs: "none" }} justifyContent={'center'}>
+              <Grid md={12} display={'flex'} justifyContent={'center'} mt={6} >
+                <Box sx={{
+                  padding: "4px 4px 1px",
+                  borderRadius: "4px",
+                  background: "#fff",
+                  boxShadow: "0px 0px 26px 10px rgba(0,0,0,0.4)",
+                  md: {
+                    display: "none"
+                  }
+                }}>
+                  <iframe width="400" height="250" src="https://www.youtube.com/embed/5h29R5wrz9Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
+                </Box>
+              </Grid>
+            </Grid>
+            <Grid container display={{ md: "none", sm: "none", xs: "flex" }} justifyContent={'center'}>
+              <Grid md={12} display={'flex'} justifyContent={'center'} mt={6} >
+                <Box sx={{
+                  padding: "4px 4px 1px",
+                  borderRadius: "4px",
+                  background: "#fff",
+                  boxShadow: "0px 0px 26px 10px rgba(0,0,0,0.4)",
+                  md: {
+                    display: "none"
+                  }
+                }}>
+                  <iframe width="300" height="200" src="https://www.youtube.com/embed/5h29R5wrz9Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
+                </Box>
+              </Grid>
+            </Grid>
           </Grid>
-          <Grid md={12} display={'flex'} justifyContent={'center'} mt={3} >
+
+          <Grid md={12} sm={6} xs={11.5} display={'flex'} justifyContent={'center'} mt={3} ml={{ md: 0, sm: 0, xs: 1 }}>
             <Button variant="contained" sx={{
               fontSize: "30px",
               fontWeight: 600,
               background: "#363753",
               borderRadius: "30px",
               padding: "15px",
-              width: "600px"
-            }}>
-              <Typography variant="h6" sx={{ fontWeight: 700, color: "#FEFEFE" }}>
+              width: "600px",
+              '&:hover': {
+                backgroundColor: "#292a35",
+                borderColor: "#292a35",
+                boxShadow: 'none',
+              }
+            }}
+              href='https://pay.kiwify.com.br/mmBffsg'>
+              <Typography sx={{ fontWeight: 700, color: "#FEFEFE" }} fontSize={{ md: "25px", sm: "20px", xs: "15px" }}>
                 Quero conhecer o método!
               </Typography>
             </Button>
@@ -72,7 +113,7 @@ export default function App() {
                 </Typography>
               </Typography>
             </Grid>
-            <Grid item display={'flex'} ml={5}>
+            <Grid item display={'flex'} ml={{ md: 5, sm: 0, xs: 2 }}>
               <EmojiEventsOutlinedIcon sx={{
                 fontSize: "70px",
                 color: "#FEFEFE"
@@ -84,7 +125,7 @@ export default function App() {
                 </Typography>
               </Typography>
             </Grid>
-            <Grid item display={'flex'} ml={5}>
+            <Grid item display={'flex'} ml={{ md: 5, sm: 0, xs: 0 }} mt={{ md: 0, sm: 0, xs: 2 }}>
               <LockClockOutlinedIcon sx={{
                 fontSize: "70px",
                 color: "#FEFEFE"
@@ -102,7 +143,7 @@ export default function App() {
             <Typography variant="h4" sx={{ fontWeight: 700, color: "#363753", textAlign: "center" }}>
               Para quem
               <Typography variant="h4" sx={{ fontWeight: 700, color: "#363753", background: "#5CD2C6", padding: "10px" }}>
-                indicamos esse Curso:
+                Estamos indicando esse Curso:
               </Typography>
             </Typography>
           </Grid>
@@ -244,16 +285,22 @@ export default function App() {
               </Box>
             </Grid>
           </Grid>
-          <Grid md={12} display={'flex'} justifyContent={'center'} mb={3}>
+          <Grid md={12} sm={6} xs={11.5} display={'flex'} justifyContent={'center'} mt={3} ml={{ md: 0, sm: 0, xs: 1 }} mb={2}>
             <Button variant="contained" sx={{
               fontSize: "30px",
               fontWeight: 600,
               background: "#363753",
               borderRadius: "30px",
               padding: "15px",
-              width: "600px"
-            }}>
-              <Typography variant="h6" sx={{ fontWeight: 700, color: "#FEFEFE" }}>
+              width: "600px",
+              '&:hover': {
+                backgroundColor: "#292a35",
+                borderColor: "#292a35",
+                boxShadow: 'none',
+              }
+            }}
+              href='https://pay.kiwify.com.br/mmBffsg'>
+              <Typography sx={{ fontWeight: 700, color: "#FEFEFE" }} fontSize={{ md: "25px", sm: "20px", xs: "15px" }}>
                 Quero conhecer o método!
               </Typography>
             </Button>
