@@ -19,7 +19,7 @@ export default function Home() {
                 boxShadow: "0px 0px 50px 10px rgba(31,65,187.1)",
                 height: "700px"
             }}>
-                <img src={treine} width={"700px"} height={"700px"} />
+                <img src={treine} width={"700px"} height={"700px"} alt="Imagem de treino"/>
             </Grid>
         </Grid >
     )

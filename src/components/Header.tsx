@@ -7,7 +7,7 @@ export default function Header() {
             <Grid item sx={{
                 color: "#fff"
             }}>
-                <img src={logo} width={"120px"} />
+                <img src={logo} width={"120px"} alt="Logotipo"/>
             </Grid>
             <Grid item mt={1}>
                 <Typography sx={{
