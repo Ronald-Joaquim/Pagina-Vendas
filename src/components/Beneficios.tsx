@@ -5,7 +5,7 @@ import LockClockOutlinedIcon from '@mui/icons-material/LockClockOutlined';
 
 export default function Beneficios() {
     return (
-        <Grid container mt={3} mb={10} display={'flex'} justifyContent={'center'}>
+        <Grid container mt={3} mb={10} display={'flex'} justifyContent={{ lg: "center", md: 'space-around' }}>
             <Grid item display={'flex'}>
                 <VerifiedOutlinedIcon sx={{
                     fontSize: "70px",

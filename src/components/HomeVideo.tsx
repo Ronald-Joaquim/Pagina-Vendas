@@ -3,20 +3,22 @@ import Box from '@mui/material/Box';
 
 export default function Video() {
     return (
-        <Grid container display={"flex"} justifyContent={'center'} mt={5} mb={5}>
+        <Grid container display={"flex"} justifyContent={'center'} mt={{ md: 5, sm: 3, xs: 3 }} mb={{ md: 5, sm: 3, xs: 1 }}>
             <Grid md={12} display={"flex"} justifyContent={'center'} textAlign={"center"}>
-                <Typography sx={{
-                    fontSize: "40px",
-                    fontWeight: "900",
-                    color: "rgb(38, 14, 105)",
-                    fontFamily: "Outfit, sans-serif",
-                }}>
+                <Typography
+                    fontSize={{ md: "40px", sm: "30px", xs: "30px" }}
+                    padding={{ xs: "14px" }}
+                    sx={{
+                        fontWeight: "900",
+                        color: "rgb(38, 14, 105)",
+                        fontFamily: "Outfit, sans-serif",
+                    }}>
                     Descubra o segredo para construir músculos incríveis com o <br />
                     nosso e-book definitivo sobre construção muscular!
                 </Typography>
             </Grid>
             <Grid container display={{ md: "flex", sm: "none", xs: "none" }} justifyContent={'center'}>
-                <Grid md={12} display={'flex'} justifyContent={'center'} mt={8} >
+                <Grid md={12} display={'flex'} justifyContent={'center'} mt={{ md: 8 }} >
                     <Box sx={{
                         padding: "4px 4px 1px",
                         borderRadius: "4px",
@@ -31,7 +33,7 @@ export default function Video() {
                 </Grid>
             </Grid>
             <Grid container display={{ md: "none", sm: "flex", xs: "none" }} justifyContent={'center'}>
-                <Grid md={12} display={'flex'} justifyContent={'center'} mt={8} >
+                <Grid md={12} display={'flex'} justifyContent={'center'} mt={{ sm: 4 }} >
                     <Box sx={{
                         padding: "4px 4px 1px",
                         borderRadius: "4px",
@@ -46,7 +48,7 @@ export default function Video() {
                 </Grid>
             </Grid>
             <Grid container display={{ md: "none", sm: "none", xs: "flex" }} justifyContent={'center'}>
-                <Grid md={12} display={'flex'} justifyContent={'center'} mt={8} >
+                <Grid md={12} display={'flex'} justifyContent={'center'} mt={{ xs: 4 }} >
                     <Box sx={{
                         padding: "4px 4px 1px",
                         borderRadius: "4px",

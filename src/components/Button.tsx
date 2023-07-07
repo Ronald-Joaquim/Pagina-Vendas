@@ -12,7 +12,7 @@ export default function Buttons() {
         },
     }));
     return (
-        <Grid md={12} sm={6} xs={11.5} display={'flex'} justifyContent={'center'} mt={5} mb={10} ml={{ md: 0, sm: 0, xs: 1 }}>
+        <Grid md={12} sm={10} xs={10} display={'flex'} justifyContent={"center"} mt={5} mb={{ md: 10, sm: 5, xs: 5 }} ml={{ md: 0, sm: 0, xs: 1 }}>
             <ColorButton variant="contained" sx={{
                 fontSize: "30px",
                 fontWeight: 600,
